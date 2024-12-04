@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body{
+  min-height: 100vh;
+  background: url(https://media.istockphoto.com/id/1191080960/photo/traditional-turkish-breakfast-and-people-taking-various-food-wide-composition.jpg?s=612x612&w=0&k=20&c=PP5ejMisEwzcLWrNmJ8iPPm_u-4P6rOWHEDpBPL2n7Q=);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h1
+{
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h3
+{
+  
+    font-family: "Ruge Boogie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: aliceblue;
+}
+
+
+
+
+
+header{
+  width: 100%;
+  position:fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: rgb(17, 17, 17);
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+header .logo{
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #e97612; 
+
+}
+
+nav a{
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 15px;
+  padding: 8px;
+  color: #e97612;
+  font-weight: 500;
+  border-bottom: solid transparent 3px;
+  transition: .3s ease;
+}
+nav a:hover{
+  border-bottom: solid #ff0000 3px;
+  color: #f7c100;
+}
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #f8890a;
+  color: #fff;
+  border-radius: 10px;
+  transition: .3s ease;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+
+}
+#chek{
+  display: none;
+  
+}
+#chek:checked ~ nav{
+  left: 0;
+  opacity: 1;
+  color: white;
+  
+}
+
+.fa-solid 
+{
+  color: #f8890a;
+}
+
+label{
+  font-size: 35px;
+  cursor: pointer;
+  color: #111;
+  display: none;
+}
+
+@media (max-width:898px){
+  header{
+    padding: 4%;
+    transition: .3s ease;
+  }
+  nav a{
+    margin: 10px;
+    transition: .3s ease;
+  }
+}
+@media(max-width:798px){
+  header nav {
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #fd9b08;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s ease;
+  opacity: 0;
+
+  }
+    header nav a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 0 10px hsl(8, 100%, 42%);
+      border-radius: 10px;
+      margin-top: 30px;
+      font-size: 22px;
+    }
+
+  label{
+    display: block;
+  }
+}
+
+section{
+  padding: 6%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  text-align: center;
+  position: relative;
+}
+
+.content h1{
+  font-size: 60px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+
+}
+
+.content p{
+  line-height: 1.4;
+  font-size: 17px;
+  color: #eee;
+  margin: 20px 30px;
+}
+section .content .btn{
+  background-color: #fff;
+  color: #0050d5;
+  transition: .3s ease;
+}
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.Menus
+{
+  height: 600px;
+  width: 100%;
+  background-color: #eee;
+}
+
+.OSM
+{
+  text-align: center;
+}
